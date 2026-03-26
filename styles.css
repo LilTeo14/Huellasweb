@@ -505,6 +505,29 @@ img {
     z-index: 1;
 }
 
+/* Capturas App Gestión */
+.app-capturas {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.app-capturas img {
+    flex: 1;
+    width: 0;
+    /* Ensures equal scaling */
+    border-radius: 12px;
+    box-shadow: var(--shadow-soft);
+    border: 2px solid var(--glass-border);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    object-fit: cover;
+}
+
+.app-capturas img:hover {
+    transform: translateY(-5px);
+    border-color: rgba(68, 107, 67, 0.4);
+}
+
 /* Value Props */
 .value-prop {
     background-color: var(--bg-secondary);
