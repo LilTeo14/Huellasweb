@@ -215,8 +215,11 @@ img {
     position: relative;
     padding-top: 80px;
     overflow: hidden;
-    background: radial-gradient(circle at 80% 20%, rgba(190, 92, 41, 0.08) 0%, rgba(255, 255, 255, 0) 40%),
-        radial-gradient(circle at 20% 80%, rgba(68, 107, 67, 0.08) 0%, rgba(255, 255, 255, 0) 40%);
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7)),
+                url('assets/hero_bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .hero-bg {
