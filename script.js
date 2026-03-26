@@ -79,4 +79,35 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+    // 5. Stat Counter Animation
+    const statsSection = document.querySelector('.stats');
+    const counters = document.querySelectorAll('.stat-number');
+    const counterSpeed = 200;
+
+    const statsObserver = new IntersectionObserver((entries, observer) => {
+        const [entry] = entries;
+        if (entry.isIntersecting) {
+            counters.forEach(counter => {
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const count = +counter.innerText.replace('+', '').replace('%', '');
+                    const inc = target / counterSpeed;
+
+                    if (count < target) {
+                        const nextValue = Math.ceil(count + inc);
+                        counter.innerText = (nextValue > target ? target : nextValue) + (counter.innerText.includes('%') ? '%' : '+');
+                        setTimeout(updateCount, 1);
+                    } else {
+                        counter.innerText = target + (counter.innerText.includes('%') ? '%' : '+');
+                    }
+                };
+                updateCount();
+            });
+            observer.unobserve(statsSection);
+        }
+    }, { threshold: 0.5 });
+
+    if (statsSection) {
+        statsObserver.observe(statsSection);
+    }
 });
