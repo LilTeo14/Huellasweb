@@ -704,6 +704,7 @@ img {
     align-items: center;
     gap: 0.5rem;
     margin-bottom: 0.75rem;
+    white-space: nowrap;
 }
 
 .footer-contact i {
