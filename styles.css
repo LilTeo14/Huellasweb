@@ -904,4 +904,180 @@ img {
     .section-padding {
         padding: 60px 0;
     }
+} 
+ 
+/* Advanced Service Cards */
+.services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
 }
+.service-card {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    position: relative;
+    overflow: hidden;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(68, 107, 67, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 45px rgba(68, 107, 67, 0.15);
+    border-color: rgba(190, 92, 41, 0.3);
+}
+.sc-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--glass-border);
+}
+.sc-icon {
+    width: 72px;
+    height: 72px;
+    border-radius: 18px;
+    background: var(--gradient-1);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    flex-shrink: 0;
+    box-shadow: 0 10px 20px rgba(68, 107, 67, 0.2);
+}
+.sc-title h3 {
+    font-size: 1.7rem;
+    color: var(--primary-dark);
+    margin-bottom: 0.25rem;
+}
+.sc-desc {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.sc-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+}
+.sc-section {
+    display: flex;
+    flex-direction: column;
+}
+.sc-section.sc-full {
+    grid-column: span 2;
+}
+.sc-section h4 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--secondary);
+    font-size: 1.15rem;
+    margin-bottom: 1rem;
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.sc-section p {
+    color: var(--text-main);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+.sc-modules {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin: 1rem 0;
+}
+.sc-module {
+    background: var(--bg-primary);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    padding: 1.25rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+}
+.sc-module:hover {
+    transform: translateY(-3px);
+    border-color: var(--primary);
+    box-shadow: 0 6px 15px rgba(68, 107, 67, 0.1);
+}
+.sc-mod-num {
+    background: var(--gradient-2);
+    color: var(--primary);
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    font-weight: 800;
+    flex-shrink: 0;
+}
+.sc-mod-text {
+    font-size: 0.95rem;
+    color: var(--text-main);
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+.sc-mod-text strong {
+    color: var(--primary-dark);
+}
+.sc-note {
+    font-size: 0.9rem !important;
+    color: var(--text-muted) !important;
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+.sc-deliverables {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+.sc-deliverables li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    font-size: 1rem;
+    background: var(--bg-secondary);
+    padding: 1rem 1.25rem;
+    border-radius: 10px;
+    border-left: 4px solid var(--secondary);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+}
+.sc-deliverables i {
+    color: var(--primary);
+    font-size: 1.3rem;
+    margin-top: 0.1rem;
+    flex-shrink: 0;
+}
+
+@media (max-width: 992px) {
+    .sc-body {
+        grid-template-columns: 1fr;
+    }
+    .sc-section.sc-full {
+        grid-column: span 1;
+    }
+}
+@media (max-width: 576px) {
+    .sc-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .service-card {
+        padding: 1.5rem;
+    }
+}
+
