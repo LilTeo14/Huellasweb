@@ -1081,3 +1081,59 @@ img {
     }
 }
 
+
+/* About Us Modern Styles */
+.modern-quote {
+    position: relative;
+    padding-left: 1.5rem;
+    border-left: 4px solid var(--primary);
+    margin-bottom: 1.5rem;
+    background: linear-gradient(90deg, rgba(68,107,67,0.05) 0%, transparent 100%);
+    padding: 1rem 1rem 1rem 1.5rem;
+    border-radius: 0 12px 12px 0;
+}
+
+.about-highlight-box {
+    background: var(--bg-primary);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    padding: 1.5rem 1.5rem 1.5rem 2rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-highlight-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(68, 107, 67, 0.1);
+}
+
+.ah-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 100%;
+    background: var(--gradient-1);
+}
+
+.ah-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.ah-icon-wrap {
+    width: 40px;
+    height: 40px;
+    background: var(--gradient-2);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary);
+    font-size: 1.4rem;
+}
+
