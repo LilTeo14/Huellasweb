@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/EVASGE/:match*",
+      "destination": "https://frontend-production-ffbf1.up.railway.app/EVASGE/:match*"
+    }
+  ]
+}
