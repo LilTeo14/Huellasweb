@@ -338,14 +338,27 @@ img {
     background: #ffffff;
 }
 
-.chart-line {
-    height: 120px;
+.hero-process-steps {
     width: 100%;
-    /* Subtle green chart line */
-    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100"><path d="M0 80 Q 50 20, 100 60 T 200 40 T 300 70 T 400 30" fill="none" stroke="%23466978" stroke-width="4" stroke-linecap="round"/><path d="M0 80 Q 50 20, 100 60 T 200 40 T 300 70 T 400 30 L 400 100 L 0 100 Z" fill="rgba(70,105,120,0.1)" stroke="none"/></svg>') no-repeat center;
-    background-size: cover;
-    margin-bottom: 2rem;
-    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.hero-process-steps svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-process-steps .ps-label {
+    font-family: var(--font-heading);
+    font-size: 15px;
+    font-weight: 700;
+    fill: var(--text-main);
+}
+
+.hero-process-steps .ps-label-strong {
+    fill: var(--primary-dark);
+    font-size: 16px;
 }
 
 .stats-grid {
