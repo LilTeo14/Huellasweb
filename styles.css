@@ -171,6 +171,28 @@ img {
     object-fit: contain;
 }
 
+.logo-brand {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.25;
+}
+
+.logo-brand-name {
+    font-family: var(--font-heading);
+    font-weight: 800;
+    font-size: 1.35rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--primary);
+}
+
+.logo-brand-tagline {
+    font-size: 0.72rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+
 .nav-links {
     display: flex;
     gap: 1.5rem;
@@ -862,6 +884,16 @@ img {
 }
 
 @media (max-width: 768px) {
+    .logo-brand-tagline {
+        white-space: normal;
+        font-size: 0.65rem;
+        max-width: 200px;
+    }
+
+    .logo-brand-name {
+        font-size: 1.1rem;
+    }
+
     .nav-links {
         position: fixed;
         top: 70px;
