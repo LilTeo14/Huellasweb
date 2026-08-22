@@ -11,6 +11,31 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // 0.5 Formulario de contacto -> abre el cliente de correo con los datos
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('cf-name').value.trim();
+            const email = document.getElementById('cf-email').value.trim();
+            const message = document.getElementById('cf-message').value.trim();
+            const note = document.getElementById('cf-note');
+
+            if (!name || !email) {
+                note.textContent = 'Por favor completa tu nombre y correo antes de enviar.';
+                note.classList.add('is-error');
+                return;
+            }
+
+            const subject = encodeURIComponent(`Contacto web de ${name}`);
+            const body = encodeURIComponent(`Nombre: ${name}\nCorreo: ${email}\n\nMensaje:\n${message}`);
+            window.location.href = `mailto:contacto@huellas-sostenibles.cl?subject=${subject}&body=${body}`;
+
+            note.classList.remove('is-error');
+            note.textContent = 'Se abrió tu cliente de correo con el mensaje listo para enviar.';
+        });
+    }
+
     // 1. Sticky Navbar Effect
     const navbar = document.querySelector('.navbar');
     window.addEventListener('scroll', () => {
