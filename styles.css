@@ -641,17 +641,6 @@ img {
     }
 }
 
-/* Value Props */
-.value-prop {
-    background-color: var(--bg-secondary);
-}
-
-.value-card {
-    text-align: center;
-    padding: 3rem 2rem;
-    background: #ffffff;
-}
-
 .icon-circle {
     width: 90px;
     height: 90px;
@@ -663,16 +652,6 @@ img {
     justify-content: center;
     font-size: 3rem;
     color: var(--secondary);
-}
-
-.value-card h3 {
-    color: var(--primary);
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.value-card p {
-    color: var(--text-muted);
 }
 
 /* Por qué elegirnos */
