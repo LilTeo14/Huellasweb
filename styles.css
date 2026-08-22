@@ -53,9 +53,9 @@ img {
 }
 
 .container {
-    max-width: 1280px;
+    max-width: 1440px;
     margin: 0 auto;
-    padding: 0 5%;
+    padding: 0 2.5%;
 }
 
 .gradient-text {
@@ -63,18 +63,18 @@ img {
 }
 
 .section-padding {
-    padding: 100px 0;
+    padding: 64px 0;
 }
 
 .section-title {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+    font-size: 2.1rem;
+    margin-bottom: 0.75rem;
     color: var(--text-main);
 }
 
 .subtitle {
     color: var(--text-muted);
-    font-size: 1.1rem;
+    font-size: 1rem;
     max-width: 600px;
     margin: 0 auto;
 }
@@ -84,11 +84,11 @@ img {
 }
 
 .mt-4 {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
 }
 
 .mt-5 {
-    margin-top: 3rem;
+    margin-top: 2.25rem;
 }
 
 /* Buttons */
@@ -231,11 +231,12 @@ img {
 
 /* Hero Section */
 .hero {
-    min-height: 100vh;
+    min-height: auto;
     display: flex;
     align-items: center;
     position: relative;
-    padding-top: 80px;
+    padding-top: 140px;
+    padding-bottom: 70px;
     overflow: hidden;
     background: linear-gradient(rgba(255, 255, 255, 0.94), rgba(255, 255, 255, 0.88)),
                 url('assets/hero_watermark.svg');
@@ -1006,18 +1007,18 @@ img {
 }
 
 .section-title-alt {
-    font-size: 2.4rem;
+    font-size: 2rem;
     font-weight: 800;
     letter-spacing: 0.02em;
     color: var(--text-main);
     text-transform: uppercase;
-    margin-bottom: 1rem;
+    margin-bottom: 0.65rem;
 }
 
 .subtitle-alt {
     color: var(--text-muted);
-    font-size: 1.05rem;
-    line-height: 1.6;
+    font-size: 0.95rem;
+    line-height: 1.55;
     max-width: 640px;
     margin: 0 auto;
 }
@@ -1025,7 +1026,7 @@ img {
 .services-numbered {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 3rem 2.5rem;
+    gap: 2rem 2.5rem;
     align-items: start;
 }
 
@@ -1036,49 +1037,49 @@ img {
 
 .sn-index {
     font-family: var(--font-heading);
-    font-size: 3rem;
+    font-size: 2.2rem;
     font-weight: 700;
     color: rgba(70, 105, 120, 0.18);
     line-height: 1;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
 }
 
 .sn-title {
-    font-size: 1.2rem;
+    font-size: 1.05rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.03em;
     color: var(--text-main);
-    margin-bottom: 0.85rem;
+    margin-bottom: 0.6rem;
 }
 
 .sn-desc {
     color: var(--text-muted);
-    font-size: 0.98rem;
-    line-height: 1.7;
-    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    line-height: 1.55;
+    margin-bottom: 1rem;
 }
 
 .sn-underline {
     display: block;
-    width: 42px;
+    width: 36px;
     height: 3px;
     background: var(--secondary);
     border-radius: 2px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .sn-more {
     align-self: flex-start;
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.4rem;
     background: var(--text-muted);
     color: #fff;
     border: none;
-    padding: 0.65rem 1.4rem;
+    padding: 0.5rem 1.15rem;
     border-radius: 30px;
-    font-size: 0.8rem;
+    font-size: 0.72rem;
     font-weight: 700;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -1109,7 +1110,7 @@ img {
 .sn-item.is-open .sn-details {
     grid-template-rows: 1fr;
     opacity: 1;
-    margin-top: 1.75rem;
+    margin-top: 1.1rem;
 }
 
 .sn-details-inner {
@@ -1117,7 +1118,7 @@ img {
 }
 
 .sn-detail-block {
-    margin-bottom: 1.25rem;
+    margin-bottom: 0.9rem;
 }
 
 .sn-detail-block:last-child {
@@ -1127,17 +1128,19 @@ img {
 .sn-detail-block h4 {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.4rem;
     color: var(--secondary);
-    font-size: 1rem;
-    margin-bottom: 0.75rem;
+    font-size: 0.8rem;
+    margin-bottom: 0.4rem;
     font-family: var(--font-heading);
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
 
-.sn-detail-block .sc-deliverables {
-    grid-template-columns: 1fr;
+.sn-detail-block p {
+    color: var(--text-main);
+    font-size: 0.85rem;
+    line-height: 1.55;
 }
 
 @media (max-width: 992px) {
