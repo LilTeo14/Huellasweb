@@ -1,4 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // 0. Servicios: expandir/colapsar detalle "Leer más"
+    document.querySelectorAll('.sn-more').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const item = btn.closest('.sn-item');
+            const isOpen = item.classList.toggle('is-open');
+            btn.setAttribute('aria-expanded', isOpen);
+            btn.innerHTML = isOpen
+                ? 'Ver menos <i class="ph ph-caret-right"></i>'
+                : 'Leer más <i class="ph ph-caret-right"></i>';
+        });
+    });
+
     // 1. Sticky Navbar Effect
     const navbar = document.querySelector('.navbar');
     window.addEventListener('scroll', () => {

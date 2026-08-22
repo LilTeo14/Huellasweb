@@ -938,6 +938,160 @@ img {
     }
 }
 
+/* Nuestros Servicios - layout numerado ejecutivo */
+.services-alt {
+    background: #f4f6f7;
+    border-top: 1px solid var(--glass-border);
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.section-title-alt {
+    font-size: 2.4rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    color: var(--text-main);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.subtitle-alt {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    line-height: 1.6;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.services-numbered {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem 2.5rem;
+    align-items: start;
+}
+
+.sn-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.sn-index {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgba(70, 105, 120, 0.18);
+    line-height: 1;
+    margin-bottom: 0.75rem;
+}
+
+.sn-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--text-main);
+    margin-bottom: 0.85rem;
+}
+
+.sn-desc {
+    color: var(--text-muted);
+    font-size: 0.98rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.sn-underline {
+    display: block;
+    width: 42px;
+    height: 3px;
+    background: var(--secondary);
+    border-radius: 2px;
+    margin-bottom: 1.5rem;
+}
+
+.sn-more {
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--text-muted);
+    color: #fff;
+    border: none;
+    padding: 0.65rem 1.4rem;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.sn-more:hover {
+    background: var(--primary-dark);
+}
+
+.sn-more i {
+    transition: transform 0.25s ease;
+}
+
+.sn-more[aria-expanded="true"] i {
+    transform: rotate(90deg);
+}
+
+.sn-details {
+    display: grid;
+    grid-template-rows: 0fr;
+    opacity: 0;
+    transition: grid-template-rows 0.35s ease, opacity 0.3s ease, margin-top 0.35s ease;
+    margin-top: 0;
+}
+
+.sn-item.is-open .sn-details {
+    grid-template-rows: 1fr;
+    opacity: 1;
+    margin-top: 1.75rem;
+}
+
+.sn-details-inner {
+    overflow: hidden;
+}
+
+.sn-detail-block {
+    margin-bottom: 1.25rem;
+}
+
+.sn-detail-block:last-child {
+    margin-bottom: 0;
+}
+
+.sn-detail-block h4 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--secondary);
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.sn-detail-block .sc-deliverables {
+    grid-template-columns: 1fr;
+}
+
+@media (max-width: 992px) {
+    .services-numbered {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .services-numbered {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Advanced Service Cards */
 .services-list {
     display: flex;
