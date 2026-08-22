@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="wmFade" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#466978" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#466978" stop-opacity="0.04"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="#ffffff"/>
+
+  <!-- Sector productivo: planta industrial -->
+  <g fill="url(#wmFade)">
+    <rect x="120" y="520" width="420" height="220" />
+    <rect x="150" y="440" width="60" height="80" />
+    <rect x="240" y="400" width="60" height="120" />
+    <rect x="330" y="440" width="60" height="80" />
+    <polygon points="120,520 540,520 540,500 120,500" />
+    <rect x="470" y="360" width="26" height="180" />
+    <rect x="420" y="390" width="26" height="150" />
+  </g>
+
+  <!-- Chimeneas con humo -->
+  <g fill="none" stroke="#466978" stroke-opacity="0.08" stroke-width="14" stroke-linecap="round">
+    <path d="M483 360 C 470 330, 500 310, 483 280 C 466 250, 496 230, 483 200"/>
+    <path d="M433 390 C 420 360, 450 340, 433 310 C 416 280, 446 260, 433 230"/>
+  </g>
+
+  <!-- Automatizacion: engranajes -->
+  <g fill="none" stroke="#466978" stroke-opacity="0.14" stroke-width="10">
+    <circle cx="820" cy="260" r="90"/>
+    <circle cx="820" cy="260" r="34" fill="#ffffff" fill-opacity="0"/>
+    <g stroke-width="10">
+      <line x1="820" y1="150" x2="820" y2="130"/>
+      <line x1="820" y1="390" x2="820" y2="370"/>
+      <line x1="710" y1="260" x2="690" y2="260"/>
+      <line x1="950" y1="260" x2="930" y2="260"/>
+      <line x1="742" y1="182" x2="728" y2="168"/>
+      <line x1="898" y1="338" x2="912" y2="352"/>
+      <line x1="898" y1="182" x2="912" y2="168"/>
+      <line x1="742" y1="338" x2="728" y2="352"/>
+    </g>
+  </g>
+  <g fill="none" stroke="#466978" stroke-opacity="0.10" stroke-width="8">
+    <circle cx="940" cy="380" r="55"/>
+    <line x1="940" y1="305" x2="940" y2="290"/>
+    <line x1="940" y1="470" x2="940" y2="455"/>
+    <line x1="865" y1="380" x2="850" y2="380"/>
+    <line x1="1030" y1="380" x2="1015" y2="380"/>
+  </g>
+
+  <!-- Eficiencia energetica: rayo -->
+  <g fill="#466978" fill-opacity="0.12">
+    <polygon points="700,470 640,600 685,600 655,720 760,560 710,560 745,470"/>
+  </g>
+
+  <!-- Auditoria SGE: portapapeles con check -->
+  <g stroke="#466978" stroke-opacity="0.16" stroke-width="10" fill="none" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="920" y="560" width="180" height="230" rx="14"/>
+    <rect x="965" y="540" width="90" height="34" rx="8" fill="#ffffff" fill-opacity="0.0"/>
+    <path d="M960 660 l35 35 l70 -85"/>
+    <line x1="950" y1="750" x2="1070" y2="750"/>
+  </g>
+
+  <!-- Escudo normativo (Ley de Eficiencia Energetica) -->
+  <g fill="#466978" fill-opacity="0.07">
+    <path d="M300 640 C 300 600 340 590 360 580 C 380 590 420 600 420 640 C 420 710 360 760 360 760 C 360 760 300 710 300 640 Z"/>
+  </g>
+</svg>
