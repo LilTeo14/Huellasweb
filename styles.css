@@ -314,8 +314,8 @@ img {
     padding: 0.5rem 1rem;
     background: rgba(255, 255, 255, 0.12);
     backdrop-filter: blur(4px);
-    color: var(--accent-teal-light);
-    border: 1px solid rgba(127, 212, 207, 0.4);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.4);
     border-radius: 20px;
     font-size: 0.875rem;
     font-weight: 600;
@@ -335,11 +335,11 @@ img {
 .hero-highlight-1,
 .hero-highlight-2 {
     font-weight: 700;
-    color: var(--accent-teal-light);
+    color: #ffffff;
 }
 
 .hero-punct {
-    color: var(--accent-teal-light);
+    color: #ffffff;
     font-weight: 800;
 }
 
