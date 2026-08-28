@@ -305,12 +305,23 @@ img {
 }
 
 .hero h1 {
-    font-size: 2.75rem;
-    line-height: 1.25;
+    font-family: var(--font-heading);
+    font-size: 2.15rem;
+    line-height: 1.4;
     margin-bottom: 1.75rem;
     color: var(--text-main);
-    font-weight: 700;
+    font-weight: 600;
     text-shadow: 0 1px 3px rgba(255, 255, 255, 0.9), 0 0 26px rgba(255, 255, 255, 0.75);
+}
+
+.hero-highlight-1 {
+    font-weight: 700;
+    color: var(--primary-dark);
+}
+
+.hero-highlight-2 {
+    font-weight: 800;
+    color: #b56f18;
 }
 
 .hero p {
@@ -1134,7 +1145,7 @@ img {
     }
 
     .hero h1 {
-        font-size: 2.35rem;
+        font-size: 1.9rem;
     }
 
     .hero-content {
@@ -1203,7 +1214,7 @@ img {
     }
 
     .hero h1 {
-        font-size: 2.1rem;
+        font-size: 1.7rem;
     }
 
     .bento-grid {
