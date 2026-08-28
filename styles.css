@@ -173,19 +173,18 @@ img {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1rem 0;
+    padding: 0.65rem 0;
     z-index: 1000;
     transition: all 0.3s ease;
-    background: rgba(255, 255, 255, 0.55);
-    backdrop-filter: blur(10px);
+    background: #ffffff;
+    border-bottom: 1px solid var(--glass-border);
 }
 
 .navbar.scrolled {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(12px);
+    background: #ffffff;
     border-bottom: 1px solid var(--glass-border);
-    padding: 0.5rem 0;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    padding: 0.45rem 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 .nav-content {
@@ -203,10 +202,16 @@ img {
 }
 
 .logo-icon {
-    height: 1.35rem;
-    width: 1.35rem;
+    height: 46px;
+    width: 46px;
     object-fit: contain;
     flex-shrink: 0;
+    transition: height 0.3s ease, width 0.3s ease;
+}
+
+.navbar.scrolled .logo-icon {
+    height: 38px;
+    width: 38px;
 }
 
 .logo-brand {
