@@ -38,8 +38,8 @@
 }
 
 body {
-    background-color: #05140d;
-    background-image: url('assets/fondo_web_hs.jpg');
+    background-color: #f4f6f5;
+    background-image: linear-gradient(rgba(244, 246, 245, 0.78), rgba(244, 246, 245, 0.78)), url('assets/fondo_web_hs.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
