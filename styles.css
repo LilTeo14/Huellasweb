@@ -191,12 +191,14 @@ img {
 .logo {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    justify-content: flex-start;
+    gap: 0.6rem;
+    margin-right: auto;
 }
 
 .logo-icon {
-    height: 24px;
-    width: 24px;
+    height: 1.35rem;
+    width: 1.35rem;
     object-fit: contain;
     flex-shrink: 0;
 }
@@ -204,6 +206,8 @@ img {
 .logo-brand {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
     line-height: 1.25;
 }
 
@@ -211,6 +215,7 @@ img {
     font-family: var(--font-heading);
     font-weight: 800;
     font-size: 1.35rem;
+    line-height: 1;
     letter-spacing: 0.02em;
     text-transform: uppercase;
     color: var(--primary);
@@ -322,9 +327,8 @@ img {
 }
 
 .hero-highlight-2 {
-    font-weight: 800;
-    color: #a8641a;
-    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.95), 0 0 14px rgba(255, 255, 255, 0.95);
+    font-weight: 600;
+    color: var(--text-main);
 }
 
 .hero-punct {
