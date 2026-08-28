@@ -315,8 +315,8 @@ img {
 }
 
 .hero-highlight-1 {
-    font-weight: 700;
-    color: var(--primary-dark);
+    font-weight: 400;
+    color: var(--text-muted);
 }
 
 .hero-highlight-2 {
