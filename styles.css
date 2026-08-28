@@ -195,8 +195,8 @@ img {
 }
 
 .logo-icon {
-    height: 44px;
-    width: 44px;
+    height: 24px;
+    width: 24px;
     object-fit: contain;
     flex-shrink: 0;
 }
@@ -323,7 +323,13 @@ img {
 
 .hero-highlight-2 {
     font-weight: 800;
-    color: #b56f18;
+    color: #a8641a;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.95), 0 0 14px rgba(255, 255, 255, 0.95);
+}
+
+.hero-punct {
+    color: var(--primary);
+    font-weight: 800;
 }
 
 .hero p {
