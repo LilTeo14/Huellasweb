@@ -286,7 +286,7 @@ img {
 
 .hero-content {
     display: block;
-    max-width: 560px;
+    max-width: 720px;
     margin-left: 0;
     margin-right: auto;
     position: relative;
@@ -308,8 +308,8 @@ img {
 
 .hero h1 {
     font-family: var(--font-heading);
-    font-size: 1.6rem;
-    line-height: 1.45;
+    font-size: 2.2rem;
+    line-height: 1.4;
     margin-bottom: 1.75rem;
     color: var(--text-main);
     font-weight: 600;
@@ -1147,7 +1147,7 @@ img {
     }
 
     .hero h1 {
-        font-size: 1.5rem;
+        font-size: 1.9rem;
     }
 
     .hero-content {
@@ -1216,7 +1216,7 @@ img {
     }
 
     .hero h1 {
-        font-size: 1.35rem;
+        font-size: 1.6rem;
     }
 
     .bento-grid {
