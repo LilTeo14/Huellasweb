@@ -38,10 +38,10 @@
 }
 
 body {
-    background-color: var(--bg-primary);
-    background-image: url('assets/energy_watermark.svg');
+    background-color: #05140d;
+    background-image: url('assets/fondo_web_hs.jpg');
     background-size: cover;
-    background-position: center top;
+    background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     color: var(--text-main);
@@ -88,6 +88,7 @@ img {
     font-size: 2.1rem;
     margin-bottom: 0.75rem;
     color: var(--text-main);
+    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.9), 0 0 22px rgba(255, 255, 255, 0.75);
 }
 
 .subtitle {
@@ -95,6 +96,13 @@ img {
     font-size: 1rem;
     max-width: 600px;
     margin: 0 auto;
+    font-weight: 500;
+    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.95), 0 0 10px rgba(255, 255, 255, 0.95), 0 0 22px rgba(255, 255, 255, 0.8);
+}
+
+.on-photo-text {
+    font-weight: 500;
+    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.95), 0 0 10px rgba(255, 255, 255, 0.95), 0 0 22px rgba(255, 255, 255, 0.8);
 }
 
 .text-center {
@@ -162,6 +170,8 @@ img {
     padding: 1rem 0;
     z-index: 1000;
     transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(10px);
 }
 
 .navbar.scrolled {
@@ -257,7 +267,7 @@ img {
     padding-top: 150px;
     padding-bottom: 90px;
     overflow: hidden;
-    background: rgba(255, 255, 255, 0.8);
+    background: transparent;
 }
 
 .hero-bg {
@@ -284,9 +294,10 @@ img {
 .badge {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background: rgba(90, 130, 150, 0.1);
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(4px);
     color: var(--secondary);
-    border: 1px solid rgba(90, 130, 150, 0.25);
+    border: 1px solid rgba(90, 130, 150, 0.35);
     border-radius: 20px;
     font-size: 0.875rem;
     font-weight: 600;
@@ -299,6 +310,7 @@ img {
     margin-bottom: 1.75rem;
     color: var(--text-main);
     font-weight: 700;
+    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.9), 0 0 26px rgba(255, 255, 255, 0.75);
 }
 
 .hero p {
@@ -306,6 +318,8 @@ img {
     color: var(--text-muted);
     margin-bottom: 2rem;
     max-width: 550px;
+    font-weight: 500;
+    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.95), 0 0 10px rgba(255, 255, 255, 0.95), 0 0 22px rgba(255, 255, 255, 0.8);
 }
 
 .hero-actions {
@@ -524,7 +538,7 @@ img {
 
 /* About Section */
 .about {
-    background-color: rgba(242, 245, 247, 0.82);
+    background-color: transparent;
 }
 
 .lead {
@@ -614,7 +628,7 @@ img {
 
 /* Services Bento Box */
 .bg-alt {
-    background-color: rgba(255, 255, 255, 0.84);
+    background-color: transparent;
 }
 
 .bento-grid {
@@ -938,7 +952,7 @@ img {
 
 /* Footer */
 .footer {
-    background: var(--gradient-footer);
+    background: rgba(15, 37, 48, 0.6);
     color: #ffffff;
     padding: 80px 0 30px;
 }
@@ -1214,7 +1228,7 @@ img {
 
 /* Nuestros Servicios - layout numerado ejecutivo */
 .services-alt {
-    background: rgba(244, 246, 247, 0.8);
+    background: transparent;
     border-top: 1px solid var(--glass-border);
     border-bottom: 1px solid var(--glass-border);
 }
@@ -1226,6 +1240,7 @@ img {
     color: var(--text-main);
     text-transform: uppercase;
     margin-bottom: 0.65rem;
+    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.9), 0 0 22px rgba(255, 255, 255, 0.75);
 }
 
 .subtitle-alt {
@@ -1234,6 +1249,8 @@ img {
     line-height: 1.55;
     max-width: 640px;
     margin: 0 auto;
+    font-weight: 500;
+    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.95), 0 0 10px rgba(255, 255, 255, 0.95), 0 0 22px rgba(255, 255, 255, 0.8);
 }
 
 .services-numbered {
