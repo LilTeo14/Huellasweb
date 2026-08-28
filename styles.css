@@ -138,15 +138,14 @@ img {
 
 .btn-secondary {
     background: transparent;
-    color: #ffffff;
-    border: 2px solid rgba(255, 255, 255, 0.5);
+    color: var(--primary);
+    border: 2px solid var(--primary);
 }
 
 .btn-secondary:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: #ffffff;
+    background: rgba(70, 105, 120, 0.05);
     transform: translateY(-2px);
-    color: #ffffff;
+    color: var(--primary);
 }
 
 .btn-large {
@@ -202,24 +201,14 @@ img {
     font-size: 1.35rem;
     letter-spacing: 0.02em;
     text-transform: uppercase;
-    color: #ffffff;
-    transition: color 0.3s ease;
+    color: var(--primary);
 }
 
 .logo-brand-tagline {
     font-size: 0.72rem;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.75);
-    white-space: nowrap;
-    transition: color 0.3s ease;
-}
-
-.navbar.scrolled .logo-brand-name {
-    color: var(--primary);
-}
-
-.navbar.scrolled .logo-brand-tagline {
     color: var(--text-muted);
+    white-space: nowrap;
 }
 
 .nav-links {
@@ -230,20 +219,12 @@ img {
 
 .nav-links a:not(.btn) {
     font-weight: 500;
-    color: #ffffff;
+    color: var(--text-main);
     font-size: 0.95rem;
     transition: color 0.3s ease;
 }
 
 .nav-links a:not(.btn):hover {
-    color: var(--accent-teal-light);
-}
-
-.navbar.scrolled .nav-links a:not(.btn) {
-    color: var(--text-main);
-}
-
-.navbar.scrolled .nav-links a:not(.btn):hover {
     color: var(--secondary);
 }
 
@@ -251,14 +232,9 @@ img {
     display: none;
     background: none;
     border: none;
-    color: #ffffff;
+    color: var(--text-main);
     font-size: 1.8rem;
     cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-.navbar.scrolled .mobile-menu-btn {
-    color: var(--text-main);
 }
 
 /* Glass Panels */
@@ -281,7 +257,7 @@ img {
     padding-top: 150px;
     padding-bottom: 90px;
     overflow: hidden;
-    background: var(--gradient-dark);
+    background: rgba(255, 255, 255, 0.88);
 }
 
 .hero-bg {
@@ -290,22 +266,10 @@ img {
     right: -10%;
     width: 800px;
     height: 800px;
-    background: radial-gradient(circle, rgba(127, 212, 207, 0.18) 0%, rgba(255, 255, 255, 0) 70%);
+    background: radial-gradient(circle, rgba(70, 105, 120, 0.08) 0%, rgba(255, 255, 255, 0) 70%);
     border-radius: 50%;
     z-index: 0;
     animation: pulse 12s infinite alternate;
-}
-
-.hero::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: url('assets/hero_watermark.svg');
-    background-size: cover;
-    background-position: center;
-    opacity: 0.06;
-    mix-blend-mode: screen;
-    pointer-events: none;
 }
 
 .hero-content {
@@ -320,9 +284,9 @@ img {
 .badge {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background: rgba(127, 212, 207, 0.14);
-    color: var(--accent-teal-light);
-    border: 1px solid rgba(127, 212, 207, 0.3);
+    background: rgba(90, 130, 150, 0.1);
+    color: var(--secondary);
+    border: 1px solid rgba(90, 130, 150, 0.25);
     border-radius: 20px;
     font-size: 0.875rem;
     font-weight: 600;
@@ -333,13 +297,13 @@ img {
     font-size: 2.75rem;
     line-height: 1.25;
     margin-bottom: 1.75rem;
-    color: #ffffff;
+    color: var(--text-main);
     font-weight: 700;
 }
 
 .hero p {
     font-size: 1.1rem;
-    color: rgba(255, 255, 255, 0.75);
+    color: var(--text-muted);
     margin-bottom: 2rem;
     max-width: 550px;
 }
