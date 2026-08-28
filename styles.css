@@ -39,7 +39,7 @@
 
 body {
     background-color: var(--bg-primary);
-    background-image: url('assets/hero_watermark.svg');
+    background-image: url('assets/energy_watermark.svg');
     background-size: cover;
     background-position: center top;
     background-attachment: fixed;
