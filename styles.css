@@ -1,8 +1,8 @@
 :root {
     --bg-primary: #ffffff;
     --bg-secondary: #f2f5f7;
-    --text-main: #2c2c2a;
-    --text-muted: #58585a;
+    --text-main: #000000;
+    --text-muted: #1a1a1a;
     --primary: #466978;
     --primary-dark: #324c56;
     --secondary: #5a8296;
@@ -12,8 +12,8 @@
     --glass-bg: rgba(255, 255, 255, 0.85);
     --glass-border: rgba(70, 105, 120, 0.15);
     --border-radius: 16px;
-    --font-sans: 'Inter', sans-serif;
-    --font-heading: 'Outfit', sans-serif;
+    --font-sans: 'Aptos', 'Calibri', 'Segoe UI', Arial, sans-serif;
+    --font-heading: 'Aptos', 'Calibri', 'Segoe UI', Arial, sans-serif;
     --shadow-soft: 0 10px 40px -10px rgba(70, 105, 120, 0.15);
 
     --navy-deep: #0f2530;
@@ -28,6 +28,10 @@
     --accent-cyan: #23c4d4;
     --gradient-gold: linear-gradient(135deg, #ffd166 0%, #f2994a 100%);
     --gradient-cyan: linear-gradient(135deg, #4fd6e0 0%, #1b8fa8 100%);
+}
+
+html {
+    font-size: 15px;
 }
 
 * {
@@ -323,18 +327,14 @@ img {
     text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
 }
 
-.hero-highlight-1 {
-    font-weight: 400;
+.hero-highlight-1,
+.hero-highlight-2 {
+    font-weight: 700;
     color: var(--accent-teal-light);
 }
 
-.hero-highlight-2 {
-    font-weight: 600;
-    color: #ffffff;
-}
-
 .hero-punct {
-    color: var(--accent-gold-light);
+    color: var(--accent-teal-light);
     font-weight: 800;
 }
 
