@@ -283,10 +283,8 @@ img {
 }
 
 .hero-content {
-    display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    gap: 3rem;
-    align-items: center;
+    display: block;
+    max-width: 780px;
     position: relative;
     z-index: 1;
 }
