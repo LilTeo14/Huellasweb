@@ -39,7 +39,7 @@
 
 body {
     background-color: #f4f6f5;
-    background-image: linear-gradient(rgba(244, 246, 245, 0.78), rgba(244, 246, 245, 0.78)), url('assets/fondo_web_hs.jpg');
+    background-image: linear-gradient(rgba(244, 246, 245, 0.5), rgba(244, 246, 245, 0.5)), url('assets/fondo_web_hs.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
