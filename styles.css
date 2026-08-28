@@ -39,6 +39,11 @@
 
 body {
     background-color: var(--bg-primary);
+    background-image: url('assets/hero_watermark.svg');
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     color: var(--text-main);
     font-family: var(--font-sans);
     line-height: 1.6;
@@ -555,7 +560,7 @@ img {
 
 /* About Section */
 .about {
-    background-color: var(--bg-secondary);
+    background-color: rgba(242, 245, 247, 0.92);
 }
 
 .lead {
@@ -645,7 +650,7 @@ img {
 
 /* Services Bento Box */
 .bg-alt {
-    background-color: var(--bg-primary);
+    background-color: rgba(255, 255, 255, 0.93);
 }
 
 .bento-grid {
@@ -1245,7 +1250,7 @@ img {
 
 /* Nuestros Servicios - layout numerado ejecutivo */
 .services-alt {
-    background: #f4f6f7;
+    background: rgba(244, 246, 247, 0.9);
     border-top: 1px solid var(--glass-border);
     border-bottom: 1px solid var(--glass-border);
 }
