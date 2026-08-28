@@ -257,7 +257,7 @@ img {
     padding-top: 150px;
     padding-bottom: 90px;
     overflow: hidden;
-    background: rgba(255, 255, 255, 0.88);
+    background: rgba(255, 255, 255, 0.8);
 }
 
 .hero-bg {
@@ -524,7 +524,7 @@ img {
 
 /* About Section */
 .about {
-    background-color: rgba(242, 245, 247, 0.92);
+    background-color: rgba(242, 245, 247, 0.82);
 }
 
 .lead {
@@ -614,7 +614,7 @@ img {
 
 /* Services Bento Box */
 .bg-alt {
-    background-color: rgba(255, 255, 255, 0.93);
+    background-color: rgba(255, 255, 255, 0.84);
 }
 
 .bento-grid {
@@ -1214,7 +1214,7 @@ img {
 
 /* Nuestros Servicios - layout numerado ejecutivo */
 .services-alt {
-    background: rgba(244, 246, 247, 0.9);
+    background: rgba(244, 246, 247, 0.8);
     border-top: 1px solid var(--glass-border);
     border-bottom: 1px solid var(--glass-border);
 }
