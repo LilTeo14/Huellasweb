@@ -256,6 +256,19 @@ img {
     color: var(--secondary);
 }
 
+.nav-link-cta {
+    font-weight: 700 !important;
+    color: var(--primary) !important;
+    padding: 0.4rem 0.9rem;
+    border: 1.5px solid var(--primary);
+    border-radius: 20px;
+}
+
+.nav-link-cta:hover {
+    background: var(--primary);
+    color: #ffffff !important;
+}
+
 .mobile-menu-btn {
     display: none;
     background: none;
