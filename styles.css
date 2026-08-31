@@ -1360,6 +1360,32 @@ img {
     letter-spacing: 0.04em;
 }
 
+.sn-demo-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    align-self: flex-start;
+    background: var(--gradient-gold);
+    color: #7a4a12;
+    font-weight: 800;
+    font-size: 0.85rem;
+    padding: 0.6rem 1.1rem;
+    border-radius: 30px;
+    margin-bottom: 1rem;
+    box-shadow: 0 8px 18px -6px rgba(242, 169, 60, 0.6);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.sn-demo-cta i {
+    font-size: 1.1rem;
+}
+
+.sn-demo-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 22px -6px rgba(242, 169, 60, 0.75);
+    color: #7a4a12;
+}
+
 .sn-desc {
     color: var(--text-muted);
     font-size: 0.9rem;
