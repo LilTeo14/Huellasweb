@@ -1353,6 +1353,16 @@ img {
     margin-bottom: 1rem;
 }
 
+.sn-desc-list {
+    margin-bottom: 1rem;
+    grid-template-columns: 1fr;
+}
+
+.sn-desc-list li {
+    font-size: 0.88rem;
+    line-height: 1.5;
+}
+
 .sn-underline {
     display: block;
     width: 36px;
