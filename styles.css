@@ -227,15 +227,15 @@ img {
     font-weight: 800;
     font-size: 1.35rem;
     line-height: 1;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--primary);
+    color: #3d5568;
 }
 
 .logo-brand-tagline {
     font-size: 0.72rem;
     font-weight: 500;
-    color: var(--text-muted);
+    color: var(--text-main);
     white-space: nowrap;
 }
 
