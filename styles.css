@@ -201,42 +201,16 @@ img {
     margin-right: auto;
 }
 
-.logo-icon {
-    height: 46px;
-    width: 46px;
+.logo-full-img {
+    height: 58px;
+    width: auto;
     object-fit: contain;
     flex-shrink: 0;
-    transition: height 0.3s ease, width 0.3s ease;
+    transition: height 0.3s ease;
 }
 
-.navbar.scrolled .logo-icon {
-    height: 38px;
-    width: 38px;
-}
-
-.logo-brand {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    line-height: 1.25;
-}
-
-.logo-brand-name {
-    font-family: var(--font-heading);
-    font-weight: 800;
-    font-size: 1.35rem;
-    line-height: 1;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #3d5568;
-}
-
-.logo-brand-tagline {
-    font-size: 0.72rem;
-    font-weight: 500;
-    color: var(--text-main);
-    white-space: nowrap;
+.navbar.scrolled .logo-full-img {
+    height: 46px;
 }
 
 .nav-links {
@@ -1211,14 +1185,8 @@ img {
 }
 
 @media (max-width: 768px) {
-    .logo-brand-tagline {
-        white-space: normal;
-        font-size: 0.65rem;
-        max-width: 200px;
-    }
-
-    .logo-brand-name {
-        font-size: 1.1rem;
+    .logo-full-img {
+        height: 42px;
     }
 
     .nav-links {
