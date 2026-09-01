@@ -12,5 +12,16 @@
       "source": "/EVASGE/:path*",
       "destination": "https://frontend-production-ffbf1.up.railway.app/EVASGE/:path*"
     }
+  ],
+  "headers": [
+    {
+      "source": "/EVASGE/:path*",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-store, must-revalidate"
+        }
+      ]
+    }
   ]
 }
